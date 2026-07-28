@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "agent": "content-scout",
+    "company": "GoodRequest",
+    "version": 1,
+    "created": null,
+    "last_run": null,
+    "is_baseline": true
+  },
+  "covered_topics": [],
+  "proposed_ideas": [],
+  "seen_content": {
+    "Vacuumlabs": { "last_seen_url": null, "last_seen_date": null },
+    "SudoLabs": { "last_seen_url": null, "last_seen_date": null },
+    "Panaxeo": { "last_seen_url": null, "last_seen_date": null },
+    "ui42": { "last_seen_url": null, "last_seen_date": null },
+    "Touch4IT": { "last_seen_url": null, "last_seen_date": null },
+    "Coderama": { "last_seen_url": null, "last_seen_date": null },
+    "STRV": { "last_seen_url": null, "last_seen_date": null },
+    "Applifting": { "last_seen_url": null, "last_seen_date": null },
+    "Cleevio": { "last_seen_url": null, "last_seen_date": null },
+    "Futured": { "last_seen_url": null, "last_seen_date": null },
+    "Ackee": { "last_seen_url": null, "last_seen_date": null },
+    "Zentity": { "last_seen_url": null, "last_seen_date": null },
+    "Adastra": { "last_seen_url": null, "last_seen_date": null },
+    "Ciklum": { "last_seen_url": null, "last_seen_date": null },
+    "GlobalLogic": { "last_seen_url": null, "last_seen_date": null },
+    "Netguru": { "last_seen_url": null, "last_seen_date": null },
+    "Miquido": { "last_seen_url": null, "last_seen_date": null },
+    "Apptension": { "last_seen_url": null, "last_seen_date": null },
+    "Monterail": { "last_seen_url": null, "last_seen_date": null },
+    "Thoughtworks": { "last_seen_url": null, "last_seen_date": null },
+    "Globant": { "last_seen_url": null, "last_seen_date": null },
+    "Productboard": { "last_seen_url": null, "last_seen_date": null },
+    "Mews": { "last_seen_url": null, "last_seen_date": null },
+    "Rossum": { "last_seen_url": null, "last_seen_date": null },
+    "Hotovo": { "last_seen_url": null, "last_seen_date": null },
+    "Wezeo": { "last_seen_url": null, "last_seen_date": null }
+  },
+  "content_trends": [],
+  "watchlist": []
+}

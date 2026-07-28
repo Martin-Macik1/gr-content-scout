@@ -1,0 +1,336 @@
+run_config:
+  cadence: weekly
+  preferred_run_time: "Monday 08:00 Europe/Bratislava"
+  output_dir: reports
+  state_file: reports/content-state.json
+  slack_channel: "_gr-opportunity-scout"
+  language: sk
+  lookback_days: 14
+  lens:
+    company: GoodRequest
+    positioning: AI-Augmented Delivery
+    focus:
+      - human-in-the-loop senior experts
+      - Secure SDLC
+      - regulated fintech and banking
+      - quality and delivery-risk reduction over lowest price
+  change_policy:
+    report_only_meaningful_changes: true
+    ignore:
+      - cosmetic website changes
+      - duplicated PR syndication without new content
+      - generic AI buzzwords without a real angle
+
+# Obsahovo zamerané signály (čo konkurencia PUBLIKUJE, nie positioning/ponuka)
+tracked_signals:
+  - content_topics_and_themes          # o čom píšu / hovoria
+  - content_formats                    # blog, case study, whitepaper, carousel, video, webinar, podcast
+  - headline_hooks_and_angles          # ako to rámujú
+  - case_studies_with_metrics_roi      # štúdie s konkrétnymi číslami
+  - lead_magnets_and_gated_content     # e-booky, kalkulačky, šablóny
+  - linkedin_topics_and_engagement     # čo rezonuje, reakcie/komentáre
+  - newsjacking_and_seasonal_angles    # EU AI Act, DORA, PSD3, incidenty, konferencie
+  - distribution_and_cadence           # ako často a kde publikujú
+  - content_gaps                       # čo nikto nepokrýva dobre = príležitosť pre GR
+
+# Typy zdrojov, ktoré agent pri každom konkurentovi hľadá
+content_source_types:
+  - blog
+  - case_studies
+  - whitepapers_ebooks
+  - webinars_events
+  - podcast
+  - linkedin_company
+  - linkedin_key_people
+  - newsletter
+
+competitors:
+  # ---------------- Priama SK konkurencia ----------------
+  - name: Vacuumlabs
+    segment: direct_sk
+    priority: high
+    websites:
+      - https://vacuumlabs.com
+      - https://vacuumlabs.com/oasis-home
+    linkedin_query: "site:linkedin.com/company Vacuumlabs AI Oasis"
+    search_queries:
+      - "Vacuumlabs blog"
+      - "Vacuumlabs case study fintech"
+
+  - name: SudoLabs
+    segment: direct_sk
+    priority: high
+    websites:
+      - https://sudolabs.com
+      - https://sudolabs.com/services
+      - https://sudolabs.com/blog
+    linkedin_query: "site:linkedin.com/company SudoLabs AI"
+    search_queries:
+      - "SudoLabs blog"
+      - "SudoLabs case study"
+
+  - name: Panaxeo
+    segment: direct_sk
+    priority: high
+    websites:
+      - https://panaxeo.com
+      - https://panaxeo.com/ai-development
+    linkedin_query: "site:linkedin.com/company Panaxeo AI"
+    search_queries:
+      - "Panaxeo blog"
+      - "Panaxeo AI development"
+
+  - name: ui42
+    segment: direct_sk
+    priority: high
+    websites:
+      - https://www.ui42.com
+      - https://www.ui42.com/web-development/artificial-intelligence
+      - https://www.ui42.com/blog
+    linkedin_query: "site:linkedin.com/company ui42 AI"
+    search_queries:
+      - "ui42 blog"
+      - "ui42 case study"
+
+  - name: Touch4IT
+    segment: direct_sk
+    priority: high
+    websites:
+      - https://touch4it.com
+      - https://touch4it.com/services/data/artificial-intelligence
+    linkedin_query: "site:linkedin.com/company Touch4IT AI"
+    search_queries:
+      - "Touch4IT blog"
+      - "Touch4IT case study"
+
+  - name: Coderama
+    segment: direct_sk
+    priority: high
+    websites:
+      - https://coderama.sk
+    linkedin_query: "site:linkedin.com/company Coderama AI"
+    search_queries:
+      - "Coderama blog"
+      - "Coderama case study"
+
+  # ---------------- Priama CZ konkurencia ----------------
+  - name: STRV
+    segment: direct_cz
+    priority: high
+    websites:
+      - https://www.strv.com
+      - https://www.strv.com/agentic-engineering
+      - https://www.strv.com/blog
+    linkedin_query: "site:linkedin.com/company STRV agentic engineering"
+    search_queries:
+      - "STRV blog"
+      - "STRV whitepaper case study"
+
+  - name: Applifting
+    segment: direct_cz
+    priority: high
+    websites:
+      - https://applifting.io
+      - https://applifting.io/services
+      - https://applifting.ai
+      - https://applifting.io/blog
+    linkedin_query: "site:linkedin.com/company Applifting AI"
+    search_queries:
+      - "Applifting blog"
+      - "Applifting case study"
+
+  - name: Cleevio
+    segment: direct_cz
+    priority: high
+    websites:
+      - https://cleevio.com
+      - https://cleevio.com/ai
+      - https://cleevio.com/blog
+    linkedin_query: "site:linkedin.com/company Cleevio AI"
+    search_queries:
+      - "Cleevio blog"
+      - "Cleevio case study"
+
+  - name: Futured
+    segment: direct_cz
+    priority: medium
+    websites:
+      - https://futured.app
+      - https://futured.app/blog
+    linkedin_query: "site:linkedin.com/company Futured AI"
+    search_queries:
+      - "Futured blog"
+      - "Futured case study"
+
+  - name: Ackee
+    segment: direct_cz
+    priority: medium
+    websites:
+      - https://www.ackee.cz
+      - https://www.ackee.cz/blog
+    linkedin_query: "site:linkedin.com/company Ackee AI"
+    search_queries:
+      - "Ackee blog"
+      - "Ackee case study"
+
+  - name: Zentity
+    segment: direct_cz
+    priority: medium
+    websites:
+      - https://www.zentity.com
+    linkedin_query: "site:linkedin.com/company Zentity AI"
+    search_queries:
+      - "Zentity blog"
+      - "Zentity case study"
+
+  # ---------------- Edge ----------------
+  - name: Hotovo
+    segment: edge
+    priority: low
+    websites:
+      - https://www.hotovo.com
+    linkedin_query: "site:linkedin.com/company Hotovo AI"
+    search_queries:
+      - "Hotovo blog"
+
+  - name: Wezeo
+    segment: edge
+    priority: low
+    websites:
+      - https://www.wezeo.com
+    linkedin_query: "site:linkedin.com/company Wezeo AI"
+    search_queries:
+      - "Wezeo blog"
+
+  - name: Adastra
+    segment: edge
+    priority: medium
+    websites:
+      - https://adastra.digital
+      - https://adastra.digital/services/artificial-intelligence
+    linkedin_query: "site:linkedin.com/company Adastra AI"
+    search_queries:
+      - "Adastra blog"
+      - "Adastra AI banking"
+
+  # ---------------- Regionálny content benchmark (NOVÉ - over aktivitu) ----------------
+  - name: Ciklum
+    segment: content_benchmark
+    priority: medium
+    status: to_verify
+    websites:
+      - https://www.ciklum.com/all-resources/
+      - https://www.ciklum.com/blog
+    linkedin_query: "site:linkedin.com/company Ciklum AI"
+    search_queries:
+      - "Ciklum AI GenAI blog"
+      - "Ciklum case study banking"
+    note: "Silný resource hub - AI, GenAI, data governance, CX. Dobré na štruktúru a témy."
+
+  - name: GlobalLogic
+    segment: content_benchmark
+    priority: low
+    status: to_verify
+    websites:
+      - https://www.globallogic.com/insights/
+      - https://www.globallogic.com/insights/blogs/
+    linkedin_query: "site:linkedin.com/company GlobalLogic AI"
+    search_queries:
+      - "GlobalLogic engineering blog AI"
+    note: "Veľký insights/engineering blog. Radar na delivery a AI-in-SDLC témy."
+
+  # ---------------- Content-craft inšpirácia (NOVÉ - formáty/distribúcia, nie priama konkurencia) ----------------
+  - name: Productboard
+    segment: content_craft_inspiration
+    priority: low
+    status: to_verify
+    websites:
+      - https://www.productboard.com/blog/
+      - https://www.productboard.com/resources/
+    linkedin_query: "site:linkedin.com/company Productboard"
+    search_queries:
+      - "Productboard blog product management"
+    note: "Špička v product-led obsahu a distribúcii. Inšpirácia na formáty a hooky."
+
+  - name: Mews
+    segment: content_craft_inspiration
+    priority: low
+    status: to_verify
+    websites:
+      - https://www.mews.com/en/blog
+    linkedin_query: "site:linkedin.com/company Mews"
+    search_queries:
+      - "Mews blog product content"
+    note: "CZ scale-up so silným content enginom. Inšpirácia na tón a kampaňový obsah."
+
+  - name: Rossum
+    segment: content_craft_inspiration
+    priority: low
+    status: to_verify
+    websites:
+      - https://rossum.ai/blog/
+    linkedin_query: "site:linkedin.com/company Rossum AI"
+    search_queries:
+      - "Rossum AI document processing blog"
+    note: "CZ AI firma. Dobré na AI-value storytelling pre enterprise."
+
+  # ---------------- Globálny trendový radar ----------------
+  - name: Thoughtworks AI
+    segment: global_trend_radar
+    priority: low
+    websites:
+      - https://www.thoughtworks.com/ai
+    linkedin_query: "site:linkedin.com/company Thoughtworks AI"
+    search_queries:
+      - "Thoughtworks AI insights"
+
+  - name: Globant AI Pods
+    segment: global_trend_radar
+    priority: low
+    websites:
+      - https://www.globant.com/studio/ai-pods
+      - https://www.globant.com/artificial-intelligence
+    linkedin_query: "site:linkedin.com/company Globant AI Pods"
+    search_queries:
+      - "Globant AI Pods"
+
+  # ---------------- Regionálna inšpirácia ----------------
+  - name: Netguru
+    segment: regional_inspiration
+    priority: low
+    websites:
+      - https://www.netguru.com
+      - https://www.netguru.com/services/ai
+    linkedin_query: "site:linkedin.com/company Netguru AI"
+    search_queries:
+      - "Netguru AI blog"
+
+  - name: Miquido
+    segment: regional_inspiration
+    priority: low
+    websites:
+      - https://www.miquido.com
+      - https://www.miquido.com/services/artificial-intelligence
+    linkedin_query: "site:linkedin.com/company Miquido AI"
+    search_queries:
+      - "Miquido AI blog"
+
+  - name: Apptension
+    segment: regional_inspiration
+    priority: low
+    websites:
+      - https://www.apptension.com
+      - https://www.apptension.com/services/ai-development
+    linkedin_query: "site:linkedin.com/company Apptension AI"
+    search_queries:
+      - "Apptension AI blog"
+
+  - name: Monterail
+    segment: regional_inspiration
+    priority: low
+    websites:
+      - https://www.monterail.com
+      - https://www.monterail.com/services/ai-development
+    linkedin_query: "site:linkedin.com/company Monterail AI"
+    search_queries:
+      - "Monterail AI blog"
