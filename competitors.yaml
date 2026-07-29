@@ -105,13 +105,14 @@ competitors:
 
   - name: Coderama
     segment: direct_sk
-    priority: high
+    priority: low
     websites:
-      - https://coderama.sk
+      - https://coderama.com
     linkedin_query: "site:linkedin.com/company Coderama AI"
     search_queries:
       - "Coderama blog"
       - "Coderama case study"
+    note: "coderama.sk robi 301 na coderama.com (overene 2026-07-29). Obsahovy engine mrtvy - posledny datumovany udaj na webe je 2023. Preradene na nizku prioritu."
 
   # ---------------- Priama CZ konkurencia ----------------
   - name: STRV
@@ -206,12 +207,13 @@ competitors:
     segment: edge
     priority: medium
     websites:
-      - https://adastra.digital
-      - https://adastra.digital/services/artificial-intelligence
+      - https://adastracorp.com
+      - https://adastracorp.com/services/artificial-intelligence
     linkedin_query: "site:linkedin.com/company Adastra AI"
     search_queries:
       - "Adastra blog"
       - "Adastra AI banking"
+    note: "adastra.digital robi 301 na adastracorp.com (overene 2026-07-29) - to bola pricina prazdneho obsahu v baseline. Obsah sa zatial aj tak nepodarilo vytazit."
 
   # ---------------- Regionálny content benchmark (NOVÉ - over aktivitu) ----------------
   - name: Ciklum
