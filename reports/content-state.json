@@ -17,7 +17,8 @@
       "DOPLNENE (baseline nezachytil, mimo 14d okna): SudoLabs CEE case studies 21.1.2026, Vacuumlabs Core Banking Implementation Partner jun 2026.",
       "KOREKCIA T7: SK marketingove a pravne weby o AI Act cl. 50 uz pisu (DataStorm, GreenTalk, Modulario, bezkecov, startitup). Gap medzi vyvojarskymi firmami plati dalej, ale nie je to uz cisty gap na celom SK webe.",
       "NOVY FAKT k cl. 50: Code of Practice on Transparency of AI-Generated Content finalny 10.6.2026, Commission opinion 8.7., guidelines 20.7. Sada troch jednotnych EU ikon zadarmo (AI / AI generated / AI modified).",
-      "adastra.digital vratila prazdny obsah druhy beh v rade - navrh preradit na nizku prioritu alebo opravit zdroj.",
+      "adastra.digital vratila prazdny obsah druhy beh v rade - pricina zistena: 301 na adastracorp.com.",
+      "POZOR: routine dnes bezala dvakrat. Paralelny beh (branch claude/amazing-feynman-3dpnjq, PR #1) poslal do Slacku vlastny post o 11:16 UTC s inymi 3 tipmi. V kanali su teda dva posty z 29.7.",
       "LinkedIn engagement stale neoverene (login wall).",
       "Commit a push isli na branch claude/amazing-feynman-71cwa8 (designovany dev branch), nie na main."
     ]
@@ -304,7 +305,7 @@
     "Adastra": {
       "last_seen_url": null,
       "last_seen_date": null,
-      "note": "NEOVERENE DRUHY BEH V RADE - adastra.digital vracia prazdny obsah. Navrh: opravit zdroj alebo preradit na nizku prioritu."
+      "note": "NEOVERENE DRUHY BEH V RADE. PRICINA ZISTENA: adastra.digital robi 301 na https://adastracorp.com/ (overene curlom 2026-07-29), preto vracala prazdny obsah. Opravit URL v competitors.yaml a overit obsah v dalsom behu."
     },
     "Ciklum": {
       "last_seen_url": "https://www.ciklum.com/all-resources/",
@@ -451,7 +452,7 @@
     "Cleevio blog listing nema datumy.",
     "Priamy URL na novy Ciklum clanok (Breaking the Reactive Cycle) vracia 404 - polozka overena len z listingu /all-resources/.",
     "vacuumlabs.com/insights a /knowledge-hub vracaju 404.",
-    "adastra.digital vracia prazdny obsah druhy beh v rade.",
-    "competitors.yaml: coderama.sk -> opravit na coderama.com; zvazit doplnenie klucovych ludi na LinkedIn a opravu alebo odstranenie adastra.digital."
+    "adastra.digital vracia prazdny obsah druhy beh v rade - pricina je 301 na adastracorp.com.",
+    "competitors.yaml: coderama.sk -> opravit na coderama.com, adastra.digital -> opravit na adastracorp.com; zvazit doplnenie klucovych ludi na LinkedIn. Subor nebol v tomto behu menene, aby nekolidoval s paralelnym behom (PR #1), ktory ho uz opravuje."
   ]
 }
