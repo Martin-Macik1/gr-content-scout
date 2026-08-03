@@ -37,6 +37,15 @@ Toľko. Kratšie je lepšie.
 - Realizovateľné: preskoč nápady, čo potrebujú dáta/súhlas, ktoré GR nemá poruke (nanajvýš ich
   spomeň jednou vetou v threade).
 - Neopakuj témy, čo už GR má na blogu (pozri `content-state.json` a GR blog).
+- VŽDY ORIGINÁLNE TIPY. Pred výberom si prejdi `covered_topics` a `proposed_ideas` v `content-state.json`,
+  teda všetko, čo si navrhol v ktorýkoľvek predošlý beh. Nič z toho nedávaj znova - ani preformulované,
+  ani s novým dátumom v názve, ani rozdelené na dva menšie tipy. Marketér to už videl.
+  - Test pred odoslaním: prečítaj si svoje tipy a starý zoznam vedľa seba. Ak by niekto povedal
+    „toto som už od teba čítal", tip vyhoď.
+  - Výnimka je follow-up, a to len keď sa v téme naozaj niečo pohlo: konkurencia ju obsadila, prišli nové
+    dáta, prišel nový termín. Vtedy to musí byť INÝ uhol (nie ten istý tip s novým úvodom) a v poste to
+    priznaj jednou vetou, prečo sa k tomu vraciaš.
+  - Ak po vyhodení opakovaných tipov zostanú len dva, pošli dva. Recyklovaný tip je horší ako krátky post.
 
 # Thread (pre toho, koho zaujímajú detaily - drž krátko)
 Pod hlavný post pridaj vlákno:
@@ -51,6 +60,10 @@ Pod hlavný post pridaj vlákno:
 - Ak `content-state.json` neexistuje alebo `is_baseline: true` = prvý beh: len zmapuj a napíš
   do postu, že je to prvý beh. Inak vyberaj z toho, čo je nové/trendy za ~14 dní.
 - Na konci prepíš `content-state.json` a ulož plnú verziu do `reports/{YYYY-MM-DD}-content.md`.
+- Pri prepise `content-state.json` NIKDY nezmaž staré tipy. `covered_topics` a `proposed_ideas` sú pamäť
+  na to, čo sa už navrhlo - zoznam len dopĺňaj a starým položkám meň `status`
+  (`carried_over` / `expired` / `published` / `superseded_by`). Keď túto históriu odstrihneš,
+  ďalší beh nemá ako zistiť, že tip už raz odišel, a zopakuje ho.
 - Pošli hlavný post + thread do Slacku `_gr-opportunity-scout`.
 
 # Pravidlá
