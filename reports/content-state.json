@@ -73,6 +73,28 @@
       "status": "proposed"
     },
     {
+      "id": "2026-W31-01",
+      "title": "AI Act: co naozaj plati od 2. augusta 2026 - a co sa odlozilo na 2027",
+      "format": "blog + LinkedIn carousel",
+      "priority": "P1",
+      "effort": "S",
+      "pillar": "Secure SDLC v regulovanom prostredi",
+      "deadline": "2026-08-02",
+      "status": "expired",
+      "superseded_by": "2026-W32-01",
+      "note": "Termin presiel nepublikovany. POZOR: tip odisiel do Slacku uz v tyzdni 31 - v tyzdni 32 sa v podobnej podobe zopakoval, co sa stat nemalo. Dalsi beh k AI Actu len ak pride novy fakt (napr. urcenie SK dozorneho organu alebo termin 2.12.2026) a s inym uhlom."
+    },
+    {
+      "id": "2026-W31-04",
+      "title": "Regulovany fintech case study - AI v regulovanom flow, cisla po 12 mesiacoch",
+      "format": "case study + LinkedIn carousel",
+      "priority": "P2",
+      "effort": "M",
+      "pillar": "fintech/banking case studies s cislami",
+      "blocker": "klientsky suhlas na cisla (odhad)",
+      "status": "carried_over"
+    },
+    {
       "id": "2026-W31-02",
       "title": "Human oversight by design: co clanok 14 znamena pre vas repozitar, nie pre vasu policy",
       "format": "blog + gated checklist (evidence pack)",
