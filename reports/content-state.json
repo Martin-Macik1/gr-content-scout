@@ -2,21 +2,21 @@
   "meta": {
     "agent": "content-scout",
     "company": "GoodRequest",
-    "version": 2,
+    "version": 3,
     "created": "2026-07-28",
-    "last_run": "2026-08-10",
-    "last_run_iso_week": "2026-W33",
+    "last_run": "2026-09-21",
+    "last_run_iso_week": "2026-W39",
     "is_baseline": false,
     "baseline_run_date": "2026-07-28",
-    "previous_run": "2026-07-28",
-    "lookback_window": "2026-07-28 -> 2026-08-10",
+    "previous_run": "2026-08-10",
+    "lookback_window": "2026-08-10 -> 2026-09-21",
     "run_notes": [
-      "Druhy beh. Porovnanie voci baseline z 2026-07-28, 'nove' = publikovane 28.7.-10.8.2026.",
-      "Slack: hlavny post + 2 vlakna odoslane do _gr-opportunity-scout.",
-      "LinkedIn engagement sa opat nepodarilo overit (login wall) - neoverene.",
-      "adastra.digital aj adastra.digital/blog vratili prazdny obsah - druhy beh v rade neoverene.",
-      "ciklum.com/resources/blog/<slug> jednotlive URL vracaju 404; obsah mapovany z /all-resources/ listingu.",
-      "Datumy stale nie su v HTML na STRV, SudoLabs, Cleevio listingoch a na Vacuumlabs homepage.",
+      "Treti beh. 'Nove' = publikovane 10.8.-21.9.2026. Okno je 6-tyzdnove, nie 14 dni - pondelkovy beh medzitym vypadol.",
+      "Slack: hlavny post + 2 vlakna odoslane do _gr-opportunity-scout (C0BE78X6V19).",
+      "LinkedIn engagement sa opat nepodarilo overit (login wall) - neoverene 3. beh v rade.",
+      "Adastra: www.adastra.digital/blog vracia HTTP 503 - NEOVERENE 3. beh v rade, navrh znizit prioritu na low.",
+      "Datumy stale nie su v HTML na STRV, SudoLabs, Cleevio a Vacuumlabs listingoch - 'nove' odvodene z porovnania zlozenia listingu.",
+      "vacuumlabs.com/articles a /knowledge-hub nevracaju listing s datumami (404 / prazdne); pouzity /topic/engineering/.",
       "coderama.sk -> coderama.com (301) stale neopravene v competitors.yaml."
     ]
   },
@@ -30,74 +30,78 @@
     "App Intents / AppFunctions: vstupny bod appky prestava byt ikona (iOS 27, Siri AI mimo EU)",
     "Interny AI asistent nad firemnymi datami - permission-aware retrieval a audit trail",
     "Vlastny nakupny checklist dodavatela vratane hranic (kedy nas nenajimat)",
-    "AI Act machine-readable oznacovanie generativnych vystupov do 2.12.2026"
+    "AI Act machine-readable oznacovanie generativnych vystupov do 2.12.2026",
+    "Cyber Resilience Act ohlasovacia povinnost od 11.9.2026 - 24h/72h/14d cez ENISA SRP",
+    "AI zrychlila pisanie kodu, nie dodavku - presun uzkeho hrdla do review a QA",
+    "iPhone Duo (skladaci, 23.10.2026) a adaptivne layouty pre bankove appky",
+    "Google developer verification pri sideloadingu od 30.9.2026",
+    "Buyer shift z AI pilotov do produkcie s governance - co sa pytaju klienti pri nakupe"
   ],
   "proposed_ideas": [
     {
-      "id": "2026-W33-01",
-      "title": "Appka bez vlastnych akcii prestane byt viditelna - App Intents a AppFunctions v roku 2026",
-      "format": "blog (refresh dvoch existujucich kusov) + LinkedIn",
-      "priority": "P1",
-      "effort": "S",
-      "pillar": "mobile delivery + AI-Augmented Delivery",
-      "note": "GR uz ma dva App Intents clanky z ery iOS 16 - refresh, nie novy kus. Uhol: bankova appka v EU bez Siri AI.",
-      "status": "proposed"
-    },
-    {
-      "id": "2026-W33-02",
-      "title": "Interny AI asistent nad firemnymi datami je lahky, kym sa nespytas, kto co smie vidiet",
-      "format": "blog + moznost gated checklistu",
+      "id": "2026-W39-01",
+      "title": "Od 11.9. mate na nahlasenie zneuzitej zranitelnosti 24 hodin - CRA v praxi vyvojoveho timu",
+      "format": "blog (newsjacking + evergreen) + LinkedIn",
       "priority": "P1",
       "effort": "M",
       "pillar": "Secure SDLC v regulovanom prostredi",
-      "note": "Diera: permission-aware retrieval a dokazovanie odpovede. Touch4IT a Ciklum riesia ako to postavit, nie kto co smie vidiet.",
+      "note": "Najvacsia diera v sete. Konkurencia: len Futured, 1 odstavec v mesacnom prehlade (14.9.). Na SK pisu bezpecnostne firmy (Citadelo, Posam), nie produktove studia. Uhol: kto drzi 24h lehotu, SBOM a triaz, co patri do zmluvy s klientom.",
       "status": "proposed"
     },
     {
-      "id": "2026-W33-03",
-      "title": "Nas nakupny checklist - aj s tym, kedy je nova appka zla odpoved",
-      "format": "blog (nazorovy, bottom-funnel)",
-      "priority": "P2",
+      "id": "2026-W39-02",
+      "title": "AI pise rychlejsie, dodavame rovnako - kde sa realne presunulo uzke hrdlo",
+      "format": "blog (nazorovy) + LinkedIn",
+      "priority": "P1",
       "effort": "S-M",
-      "pillar": "kvalita a znizovanie delivery rizika",
-      "note": "Protiťah na Vacuumlabs seriu nakupnych kriterii. Nie zrkadlovy scorecard, ale uprimna verzia s hranicami.",
+      "pillar": "AI-Augmented Delivery + human-in-the-loop",
+      "note": "STRV 'When Faster Doesnt Mean Sooner' (Jirka Koutny) + Ciklum Capacity Leak Audit (9.9.) a Engineering Bottlenecks (17.9.). Ziadny z nich nepise, ako prestavat review a QA branu pri 3x viac PR. Nepotrebuje interne cisla.",
       "status": "proposed"
     },
     {
-      "id": "2026-W33-04",
-      "title": "AI Act: co musi byt v produkte do 2. decembra 2026 (machine-readable oznacovanie)",
-      "format": "blog + LinkedIn",
-      "priority": "P1",
+      "id": "2026-W39-03",
+      "title": "Skladaci iPhone a koniec anonymnej distribucie - co to spravi s bankovou appkou",
+      "format": "blog (prakticky, reaktivny do 23.10.)",
+      "priority": "P2",
+      "effort": "S",
+      "pillar": "mobile delivery",
+      "note": "iPhone Duo launch 23.10.2026 + Google developer verification od 30.9.2026. Zachytil len Futured. GR ma mobilne portfolio v regulovanych odvetviach.",
+      "status": "proposed"
+    },
+    {
+      "id": "2026-W39-04",
+      "title": "Co sa nas klienti realne pytaju pri nakupe AI delivery v roku 2026",
+      "format": "blog (bottom-funnel, nazorovy)",
+      "priority": "P2",
       "effort": "M",
-      "pillar": "Secure SDLC v regulovanom prostredi",
-      "deadline": "2026-12-02",
-      "note": "Pokracovanie 2026-W31-01, nie ten isty clanok. W31 = co plati od 2.8.; toto = inzinierska ulacha s beziacim terminom.",
+      "pillar": "AI-Augmented Delivery",
+      "note": "Ciklum Buyer Shift (16.9.) + e-book Stuck in Pilot (11.9.) + SudoLabs hiring kus (18.9.). Nepreberat Ciklum cisla, pisat z vlastnych obchodnych rozhovorov.",
       "status": "proposed"
     }
   ],
   "carried_over_ideas": [
-    "2026-W31-01 AI Act co plati od 2.8. - deadline presiel 2.8.2026, teoreticky uz len ako retrospektiva; nahradene W33-04.",
-    "2026-W31-02 Human oversight by design (cl. 14) - stale volne, nikto zo sledovanych nezabral.",
-    "2026-W31-03 Kolko nam AI realne usetrila - stale blokovane internymi datami; STRV to zatiaľ nepublikoval.",
-    "2026-W31-04 Regulovany fintech case study - stale blokovane klientskym suhlasom; ui42 medzitym vydala Finax case study (31.7.).",
-    "2026-W31-05 Regulated Delivery Digest - stale volne, Futured vzor pokracuje (App News srpen, 4.8.)."
+    "2026-W31-02 Human oversight by design (cl. 14) - stale volne, nikto zo sledovanych nezabral (3 behy).",
+    "2026-W31-03 Kolko nam AI realne usetrila - stale blokovane internymi datami; STRV ani po 'When Faster Doesnt Mean Sooner' vlastne cisla nezverejnil.",
+    "2026-W31-04 Regulovany fintech case study - stale blokovane klientskym suhlasom.",
+    "2026-W31-05 Regulated Delivery Digest - stale volne; Futured vzor pokracuje (B2B prehled zari, 14.9.), Ciklum pridal gated e-book.",
+    "2026-W33-01 App Intents / AppFunctions refresh - ciastocne pohlteny W39-03 (iPhone Duo), zvazit spojenie.",
+    "2026-W33-02 Interny AI asistent a permission-aware retrieval - stale volne, Touch4IT sa medzitym prepol na healthcare.",
+    "2026-W33-03 Nas nakupny checklist - prekryva sa s W39-04, zvazit spojenie do jedneho kusu.",
+    "2026-W33-04 AI Act cl. 50 machine-readable oznacovanie do 2.12.2026 - stale volne, nikto v sete."
   ],
   "quick_wins_proposed": [
-    "LinkedIn: Vacsina trhu sa pripravuje na zly deadline (cl. 50 vs high-risk odklad)",
-    "LinkedIn: AI-native vs AI-assisted je zla otazka (audit trail ako jedina relevantna otazka)",
-    "LinkedIn: +21 % taskov, +98 % PR, +91 % review time (Faros AI) - meriame review, nie commity",
-    "LinkedIn: Vasa appka v EU dostane horsieho systemoveho asistenta - co s tym spravit uz teraz",
-    "LinkedIn: Termin nie je 2.8., ale 2.12. - machine-readable oznacovanie pre systemy, co uz boli na trhu"
+    "LinkedIn: Od 11.9. mate 24 hodin. Vacsina timov to zatial nevie.",
+    "LinkedIn: AI vam nezrychlila dodavku, presunula frontu pred QA (reakcia na STRV kus)",
+    "LinkedIn: 88 % PoC sa nikdy nedostane do produkcie - otazka nie je ktory model, ale kto to bude prevadzkovat",
+    "LinkedIn: Skladaci iPhone 23.10. - tri veci, ktore si v appke overit uz teraz",
+    "LinkedIn: Anonymna distribucia APK konci - co to znamena pre interne a enterprise appky"
   ],
   "seen_content": {
     "Vacuumlabs": {
-      "last_seen_url": "https://vacuumlabs.com/articles/core-banking-modernization-specialist-lenders/",
-      "last_seen_date": "2026-07-30",
-      "cadence": "nizka na blogu, silny gated whitepaper engine + rastuca seria nakupnych kriterii",
-      "new_this_run": [
-        "Hitting the Infrastructure Ceiling: Why Fast-Growing Lenders Can't Afford to Wait (2026-07-30, Adriana Fekete) - Accenture Banking Top Trends 2026: 70 % IT budgetu na maintenance a compliance, 30 % na inovacie; scenar rastu 1 -> 2 mld. GBP",
-        "How to Choose a Core Banking Implementation Partner: The Questions That Actually Matter (2026-06-18, Adriana Fekete) - 7 kriterii, nie je gated"
-      ],
+      "last_seen_url": "https://vacuumlabs.com/topic/engineering/",
+      "last_seen_date": "2026-09-21",
+      "cadence": "neoverena - datumy nie su v HTML, /articles a /knowledge-hub nevracaju listing",
+      "new_this_run": [],
       "key_items": [
         "How to Tell If a Delivery Partner Is AI-Native or Just AI-Assisted (datum neovereny) - scorecard pre hodnotenie dodavatela",
         "How We Work With AI - cisla bez metodiky: 30 % senior devs, 100 %+ juniors, 100-200 % logic-free UI",
@@ -105,50 +109,66 @@
         "Articles: What Many Banks Get Wrong About Architecture Before Modernising; Anatomy of an AI-Ready Wealth App",
         "Homepage tlaci 'Spark' - AI-powered product discovery service"
       ],
-      "threat_level": "vysoky - najblizsie k GR pozicii, plus systematicky pise nakupne kriteria za klienta"
+      "threat_level": "vysoky - najblizsie k GR pozicii, plus systematicky pise nakupne kriteria za klienta",
+      "note": "NEOVERENE. Na /topic/engineering/ pribudli voci W33 'Before You Hire Developers, Are You Asking the Right Questions?' a 'Client AI Q&A by Vacuumlabs (Vol.1)', ale bez datumov sa neda potvrdit, ci su nove. Nakupne kriteria ako seria pokracuju."
     },
     "SudoLabs": {
-      "last_seen_url": "https://sudolabs.com/insights/the-ai-data-problem-no-one-talks-about-until-it-s-too-late",
-      "last_seen_date": "2026-04-01",
-      "cadence": "nizka (~kvartalna), ale stat-heavy B2B kusy",
-      "new_this_run": [],
+      "last_seen_url": "https://sudolabs.com/insights/what-companies-actually-ask-for-when-they-hire-for-ai",
+      "last_seen_date": "2026-09-18",
+      "cadence": "nizka (~kvartalna) - prvy kus po ~5 mesiacoch",
+      "new_this_run": [
+        "What Companies Actually Ask For When They Hire for AI (2026-09-18, Adam Pall) - prompt engineering inzeraty v UK 4x hore, median platu -20 %; AI v nazvoch roli 3x od 2022; AI agent role rastu v objeme aj plate; najvzacnejsia schopnost je premenit AI na biznis vysledok"
+      ],
       "key_items": [
         "Why Your AI-Assisted Development Projects Keep Missing the Mark (2026-02-12, Adam Pall) - Spec-Driven Development, 6-7x viac API callov",
         "The AI Data Problem No One Talks About Until It's Too Late (2026-04-01, Adam Pall) - Gartner 60 %, MIT 95 % nulovy ROI, 50-70 % budgetu na data readiness",
         "The Strategic Tech Calendar: Top 8 Global Events to Watch in 2026"
       ],
-      "note": "Ticho 2 behy v rade. Datumy nie su na insights listingu - neoverene."
+      "note": "Ticho prerusene po 2 behoch. Stale stat-heavy B2B register."
     },
     "Panaxeo": {
-      "last_seen_url": "https://panaxeo.com/blog/how-do-you-build-a-software-company-at-a-time-when-coding-is-faster-than-ever",
-      "last_seen_date": "2026-07-01",
-      "cadence": "velmi nizka (2 posty v 2026)",
-      "new_this_run": [],
+      "last_seen_url": "https://panaxeo.com/blog/ai-reverse-engineered-my-printer-i-just-pressed-the-buttons",
+      "last_seen_date": "2026-08-14",
+      "cadence": "velmi nizka (3 posty v 2026)",
+      "new_this_run": [
+        "AI reverse-engineered my printer. I just pressed the buttons. (2026-08-14, Igor Liska) - osobny hands-on register"
+      ],
       "key_items": [
         "How do you build a software company at a time when coding is faster than ever? (2026-07-01, Igor Liska)",
         "2025 - the 'You're taller than I thought' year (2026-01-01, Michal Simurka)"
       ]
     },
     "ui42": {
-      "last_seen_url": "https://www.ui42.com/blog",
-      "last_seen_date": "2026-07-31",
-      "cadence": "vysoka (5 postov jul 2026) - najvyssia v SK sete",
+      "last_seen_url": "https://www.ui42.com/blog/chatgpt-ads-are-here-are-you-ready",
+      "last_seen_date": "2026-09-02",
+      "cadence": "klesla - 3 kusy za 6 tyzdnov (v juli 5 za mesiac)",
       "new_this_run": [
-        "Finax Case Study: digitalna transformacia investicnej platformy postavena na user researchi (2026-07-31, Veronika Veresova) - PRVY fintech kus, doteraz e-commerce/marketing"
+        "ChatGPT Ads are here, are you ready? (2026-09-02, Roman Helt) - OpenAI odporuca 3-5 USD/klik, posun z keyword na kontextove vyhladavanie",
+        "Who is a design engineer and what do they do? (2026-09-02, Richard Kacer)",
+        "When to start preparing Christmas campaigns? (2026-08-12, Daniela Maruskova)"
       ],
       "key_items": [
         "Strategicka digitalizacia B2B firmy 2/3: Automatizacia nie je AI (2026-07-27)",
         "Strategicka digitalizacia B2B firmy 1/3: Preco AI nie je prvy krok (2026-07-21)",
         "Google Ads update 17.8.2026 - newsjacking vendor updatu (2026-07-20, Martin Madeja)"
       ],
-      "note": "POSUN: e-commerce agentura vstupila do fintech vertikaly (Finax). Sledovat, ci to bude seria."
+      "note": "Finax case study nemala pokracovanie - fintech vstup zatial jednorazovy, nie seria. Spat na marketing/e-commerce register."
     },
     "Touch4IT": {
-      "last_seen_url": "https://touch4it.com/blog/an-internal-ai-assistant-that-answers-from-your-own-company-data",
-      "last_seen_date": "2026-08-07",
-      "cadence": "vysoka a konzistentna",
+      "last_seen_url": "https://touch4it.com/blog/how-healthcare-reimbursement-works-in-the-us",
+      "last_seen_date": "2026-09-18",
+      "cadence": "vysoka a konzistentna - 8 kusov za 6 tyzdnov",
       "new_this_run": [
-        "An Internal AI Assistant That Answers From Your Own Company Data (2026-08-07) - RAG, cross-source retrieval, model flexibility + load balancing, integracie MS Teams/Slack/Jira, jedna enterprise instalacia nad 100 000+ dokumentmi, McKinsey ~9 h/tyzden hladanim informacii; bezpecnost riesena certifikaciami (HIPAA, SOC 2, ISO 27001) a hostingom, NIE autorizaciou odpovedi"
+        "How Healthcare Reimbursement Works in the US (2026-09-18)",
+        "Building in Tech: Growth Doesnt Always Mean a New Title (2026-09-17)",
+        "Why Healthcare Engagement Is More Than SMS Reminders (2026-09-09)",
+        "Accessibility in 2026: More Than Just Following Rules (2026-09-07) - koncepcny kus, BEZ regulacie a bez cisel",
+        "Healthcare Engagement Is an Engineering Problem, Not a Marketing Problem (2026-09-02)",
+        "The 5 Components of Modern Patient Engagement Platform (2026-08-26)",
+        "What Large-Scale Patient Engagement Really Looks Like: Lessons from Illinois Medicaid (2026-08-19)",
+        "The EU AI Act: What Enterprises Need to Have in Place in 2026 (2026-08-18) - zabrali AI Act temu, ktoru sme mali v plane",
+        "What Is a Patient Engagement Platform? (2026-08-11)",
+        "Why DORA Changes Infrastructure Decisions for Financial Institutions (2026-08-11)"
       ],
       "key_items": [
         "Designing Apps Where People and AI Work Together (2026-07-09)",
@@ -156,51 +176,54 @@
         "From HIPAA to SOC 2: Operating Cloud Infrastructure in Regulated Healthcare (2026-06-12) - 1M+ Medicaid, 72 % redukcia nakladov, 6 rokov v produkcii",
         "We Cut Our Release Times by 800% (2026-06-08)"
       ],
-      "threat_level": "vysoky - exekuuje hru 'regulovane + AI + realne cisla' a teraz aj interne AI asistenty"
+      "threat_level": "vysoky - vertikalna seria (healthcare) ako format, plus zabrali AI Act aj DORA",
+      "note": "POSUN: z fintech kolizie do healthcare/patient engagement. Fintech kolizia docasne polavila, ale AI Act a DORA kusy su priama zrazka s nasimi temami."
     },
     "Coderama": {
       "last_seen_url": "https://www.coderama.com/blog",
       "last_seen_date": "2024-11-18",
       "cadence": "engine neaktivny",
       "new_this_run": [],
-      "note": "nizka priorita, kontrola raz za kvartal; opravit domenu v competitors.yaml"
+      "note": "Engine neaktivny od 2024. coderama.sk -> coderama.com (301) stale neopravene v yaml."
     },
     "STRV": {
-      "last_seen_url": "https://www.strv.com/blog/walk-the-talk-how-living-it-beats-pitching-it",
-      "last_seen_date": "2026-08-10",
-      "cadence": "vysoka - najvacsi engineering content engine v sete; datumy nie su v HTML (neoverene)",
+      "last_seen_url": "https://www.strv.com/blog/full-circle-production-kotlin-multiplatform-for-technoalpin",
+      "last_seen_date": "2026-09-21",
+      "cadence": "vysoka - stale najvacsi engineering content engine v sete; datumy nie su v HTML (neoverene)",
       "new_this_run": [
-        "Walk the Talk: How Living It Beats Pitching It (Lubo Smid, CEO) - osobny kus: diabetes 1. typu, trening 6x tyzdenne, Barry's World Tour ako 'najlepsi sales pitch bez pitchovania' (desiatky tisic USD investicie -> nad 1 mil. USD za multi-year partnerstvo), mesacny sabbatical, half IRONMAN Baku 5.9.",
-        "Na listingu novo: How to Apply Liquid Glass to Your App; Choosing An Offline-First Sync Layer For KMP; AWS AppSync to NestJS In Four Days; UIKit Is Not Dead; The STRV Mindset; The STRV Approach to Project Cost Estimation"
+        "Full Circle: Production Kotlin Multiplatform for TechnoAlpin - novy 1. na listingu",
+        "The Lifetime Value Hiding in Sports and Fitness Data",
+        "Forward Festival Takeaways",
+        "Two Writes For Every Tap: Optimistic UI In Offline-First Apps",
+        "When 'Faster' Doesn't Mean Sooner (Jirka Koutny, Backend Engineering Manager) - AI zrychlila pisanie, nie dodavku; QA overuje viac v rovnakom case; odkaz na METR studiu, vlastne cisla ziadne",
+        "How to Introduce Accessibility to an Existing App"
       ],
       "key_items": [
         "Running AI Agents on a Production Codebase: A Three-Layer System That Works (Tomas Parizek)",
-        "Why Legacy Companies Will Win the Agentic Engineering Era (Lubo Smid) - z prvej strany listingu zmizol",
-        "The Six Levels of AI Adoption Engineers Go Through (Michal Klacko)",
-        "A Busy Professional's Guide to AI Prompting - RODES framework"
+        "Walk the Talk: How Living It Beats Pitching It (Lubo Smid, CEO)",
+        "The Six Levels of AI Adoption Engineers Go Through (Michal Klacko)"
       ],
-      "threat_level": "vysoky - CEO-led thought leadership, teraz aj osobny/ludsky register",
-      "note": "Poradie listingu sa medzi behmi zmenilo a datumy nie su v HTML - 'nove' je odvodene z porovnania zlozenia, neoverene."
+      "threat_level": "vysoky - teraz aj delivery-ekonomicky register, nie len engineering a osobne kusy",
+      "note": "Stale ziadne vlastne delivery cisla. Datumy nie su v HTML - 'nove' odvodene z porovnania zlozenia listingu."
     },
     "Applifting": {
-      "last_seen_url": "https://applifting.io/blog",
-      "last_seen_date": "2026-08-07",
-      "cadence": "stredna, 2 posty za lookback",
+      "last_seen_url": "https://applifting.io/blog/what-is-a-product-trio",
+      "last_seen_date": "2026-09-11",
+      "cadence": "nizka - 1 kus za 6 tyzdnov",
       "new_this_run": [
-        "What changes when a teal company gets a CTO: Lukas Rychtecky on the role (2026-08-07, Eliska Houdkova) - otvoreny org/kulturny kus",
-        "5 reasons your next project needs a product manager (2026-07-29, Jachym Vintr)"
+        "Product trio: What it is and what it does on your project (2026-09-11, Jachym Vintr)"
       ],
       "key_items": [
         "Kids vs AI: building real-time content moderation (2026-07-03) - 69 % -> 92 % presnost, ~90k terminov, 10x nizsia cena, 3 tyzdne",
         "How fintech platforms are built: Design, architecture, and scale (2026-05-21, Jan Hauser)",
         "applifting.ai case studies s cislami: Shoptet -50 % casu na ticket, Boostspace 5 dni do prototypu, Superface 95 % uspora casu"
       ],
-      "note": "POSUN: dva posledne kusy su org/rola-orientovane, nie AI. Kulturny register."
+      "note": "Potvrdeny posun do org/rola registra, tretí kus v rade bez AI temy."
     },
     "Cleevio": {
       "last_seen_url": "https://cleevio.com/blog",
-      "last_seen_date": "2026-08-10",
-      "cadence": "neoverena - datumy nie su na listingu; zlozenie listingu bez zmeny voci baseline",
+      "last_seen_date": "2026-09-21",
+      "cadence": "engine neaktivny - listing identicky 3 behy v rade",
       "new_this_run": [],
       "key_items": [
         "Data Security in the AI Era",
@@ -208,27 +231,32 @@
         "Cleevio Puts AI in Charge with Launch of New AI Agents Venture",
         "How We Built an AI Support Teammate in Under 30 Hours (UpRate)",
         "Saving 220+ Hours of Testing with Maestro Automation"
-      ]
+      ],
+      "note": "Datumy nie su na listingu. Zlozenie listingu bez akejkolvek zmeny voci baseline (28.7.) aj voci W33. AI Agents venture zatial bez obsahovej vlny."
     },
     "Futured": {
-      "last_seen_url": "https://futured.app/cs/blog/dozvuky-wwdc-26-apple-rozdelil-ios-na-dve-rychlosti",
-      "last_seen_date": "2026-08-06",
-      "cadence": "stredna az vysoka, s recurring mesacnymi rubrikami",
+      "last_seen_url": "https://futured.app/cs/blog/iphone-duo",
+      "last_seen_date": "2026-09-16",
+      "cadence": "stredna az vysoka, recurring mesacne rubriky drzia",
       "new_this_run": [
-        "Dozvuky WWDC 26: Apple rozdelil iOS na dve rychlosti (2026-08-06, Radek Dolezal) - EU vs zvysok sveta pri Siri AI, App Schemas/App Intents prioritne, adaptive layout audity, Foundation Models zdarma pre Small Business Program (do 2 mil. downloadov); apps launch +30 %, photos +70 %",
-        "App News - srpen 2026 (2026-08-04) - Android AppFunctions API (alpha), Compose-first, Firebase AI Logic, Kotlin 2.4.0, TypeScript 7.0, AI Act cl. 50 od 2.8., EU sud potvrdil gatekeeper status Apple (8.7.)"
+        "iPhone Duo. Skladaci iPhone je tu. Co to znamena pro vasi aplikaci? (2026-09-16, Radek Dolezal) - launch 23.10., rozlozeny displej blizko iPad mini, natívne SDK sa prisposobi, vlastne UI vyzaduje pracu",
+        "B2B digitalni prehled - zari 2026 (2026-09-14, Lukas Strnadel) - CRA ohlasovanie od 11.9. (24h/72h, plna ucinnost 11.12.2027), Google developer verification od 30.9.2026 (BR/ID/SG/TH, globalne 2027)",
+        "Jsme mezi 15 nejlepsimi firmami na svete - Clutch Global Awards (2026-09-01)",
+        "Jak jsme v Lekarna.cz zrychlili listing novych produktu o 40 % pomoci AI automatizace (2026-08-31, Martin Sumera) - vzor kratkej case study s cislom v titulku"
       ],
       "key_items": [
         "B2B digitalni prehled - cervenec 2026 (2026-07-14, CEO Lukas Strnadel)",
         "AI News - kveten 2026 (2026-05-06, Martin Sumera)"
       ],
-      "note": "recurring datovany format + rychly newsjacking platform updatov = vzor na skopirovanie"
+      "note": "Jediny v sete, kto zachytil CRA - a to len jednym odstavcom. Najrychlejsi newsjacking platformovych zmien."
     },
     "Ackee": {
-      "last_seen_url": "https://www.ackee.cz/blog/agentic-development-pro-vyvojare-adlc-claude",
-      "last_seen_date": "2026-06-16",
+      "last_seen_url": "https://www.ackee.cz/blog/wwdc-2026-cupertino-core-ai-ackee",
+      "last_seen_date": "2026-09-10",
       "cadence": "nizka",
-      "new_this_run": [],
+      "new_this_run": [
+        "Byl jsem na WWDC 2026: tyden v Cupertinu, Core AI a jedna oprava bugu naziv (2026-09-10, Jindrich Dolezal) - osobna reportaz z eventu"
+      ],
       "key_items": [
         "Agentic Development Lifecycle (ADLC): prakticky plan adopce (2026-06-16, Rostislav Babacek)",
         "Super-appky: Proc na Zapade klopytaji (2026-04-28, Matous Hajek)"
@@ -236,166 +264,167 @@
     },
     "Zentity": {
       "last_seen_url": "https://www.zentity.com",
-      "last_seen_date": "2026-08-10",
+      "last_seen_date": "2026-09-21",
       "cadence": "ziadny blog - len nedatovane 'Stories' case studies",
       "new_this_run": [],
       "key_items": [
         "Stories: Nedbank Private Banking App (#2 globally), Addiko Group mobile banking rollout, Benzina Loyalty, Skoda ZenPlay"
       ],
-      "note": "ma bankovy case study material bez obsahoveho enginu - ak ho zapnu, najrychlejsie posilnenie konkurencie vo fintech obsahu"
+      "note": "Ziadny blog, len nedatovane 'Stories'. Bez zmeny."
     },
     "Adastra": {
       "last_seen_url": null,
       "last_seen_date": null,
       "new_this_run": [],
-      "note": "NEOVERENE druhy beh v rade - adastra.digital aj /blog vratili prazdny obsah. Zvazit zmenu URL v competitors.yaml alebo znizenie priority."
+      "note": "NEOVERENE 3. beh v rade - www.adastra.digital/blog vracia HTTP 503. Navrh: opravit URL alebo znizit prioritu na low v competitors.yaml."
     },
     "Ciklum": {
-      "last_seen_url": "https://www.ciklum.com/all-resources/",
-      "last_seen_date": "2026-08-06",
-      "cadence": "najvyssia v celom sete - 5 poloziek za 14 dni",
+      "last_seen_url": "https://www.ciklum.com/blog/ai-pilots-to-agentic-ai-enabled-sdlc/",
+      "last_seen_date": "2026-09-17",
+      "cadence": "najvyssia v celom sete - 9 blogov + 2 e-booky + 1 video za september",
       "new_this_run": [
-        "Before Building Enterprise AI Automation: A Practical Data Readiness Checklist for Teams (2026-08-06, blog)",
-        "Inside Intelligent Automation: How It Works in Real Enterprise Environments (2026-08-05, blog)",
-        "Model Context Protocol (MCP): The Complete Enterprise Guide to AI Integration (2026-08-03, e-book)",
-        "The AI Readiness Gap: 5 Blockers Causing Most AI Failures (2026-07-31, blog)",
-        "Breaking the Reactive Cycle: Moving Retail from Digital Logic to Autonomous Agency (2026-07-29, blog)"
+        "AI-Ready Data Infrastructure for Financial Services: UK Banks and Insurers (2026-09-17)",
+        "Engineering Bottlenecks: How to Spot What's Slowing You Down (2026-09-17)",
+        "The Buyer Shift: From AI Pilots to Agentic and AI-Enabled SDLC (2026-09-16) - 88 % PoC nedojde do produkcie (IDC/Lenovo), 95 % GenAI pilotov bez ROI (MIT NANDA), 42 % firiem zrusilo vacsinu AI iniciativ (S&P, z 17 %), 91 % CXO plani rast agentic budgetu, 26 % productivity (Microsoft/MIT, 4867 vyvojarov), 42 % firiem ma agentov v produkcii",
+        "Rethinking Audit in the Age of AI (2026-09-15, expert video s Deloitte)",
+        "Designing Scalable Software Architecture for High-Growth Products (2026-09-10)",
+        "2026 State of AI in BFSI: From Pilot to Agentic CX (2026-09-11, e-book)",
+        "The Engineering Capacity Leak Audit (2026-09-09) - 6 miest uniku kapacity, Seeking Alpha -50 % casu na testovanie",
+        "Time to Pivot: Why a Living Customer Journey Map Is Worth the Investment (2026-09-08)",
+        "Modernize Trust Without Losing The Mutual Advantage (2026-09-07, e-book)",
+        "The AI Operational Gap in BFSI (2026-09-04)",
+        "Speed to Market: How to Accelerate Product Development Without Compromise (2026-09-03)",
+        "Monolith vs Microservices: Which Architecture Works Best at Scale (2026-09-02)"
       ],
       "key_items": [
         "The Agentic SDLC: How AI Is Rewiring Software Development In 2026 (2026-07-12) - Faros AI +21 % taskov, +98 % PR, +91 % review time",
         "Why Enterprise AI Projects Fail: The Misallocation Problem (2026-07-08)",
         "Healthcare Data Engineering & Platform Modernization case study (2026-07-15)"
       ],
-      "note": "CTA vzor: produktizovana ponuka 'AI Strategy Clinic' s deliverable '90-day roadmap'. Novy vzor: e-book ako gated asset k technickej teme (MCP)."
+      "note": "Gated e-book vzor potvrdeny (2 za mesiac). Novy format: expert video s menom analytika. Ziadna polozka medzi 6.8. a 2.9. - vyzera to na kampanovy sprint, nie stabilnu kadenciu."
     },
-    "GlobalLogic": { "last_seen_url": null, "last_seen_date": null, "note": "neprevereny (nizka priorita)" },
-    "Netguru": { "last_seen_url": null, "last_seen_date": null, "note": "neprevereny (nizka priorita)" },
-    "Miquido": { "last_seen_url": null, "last_seen_date": null, "note": "neprevereny (nizka priorita)" },
-    "Apptension": { "last_seen_url": null, "last_seen_date": null, "note": "neprevereny (nizka priorita)" },
-    "Monterail": { "last_seen_url": null, "last_seen_date": null, "note": "neprevereny (nizka priorita)" },
-    "Thoughtworks": { "last_seen_url": null, "last_seen_date": null, "note": "neprevereny (nizka priorita)" },
-    "Globant": { "last_seen_url": null, "last_seen_date": null, "note": "neprevereny (nizka priorita)" },
-    "Productboard": { "last_seen_url": null, "last_seen_date": null, "note": "neprevereny (nizka priorita)" },
-    "Mews": { "last_seen_url": null, "last_seen_date": null, "note": "neprevereny (nizka priorita)" },
-    "Rossum": { "last_seen_url": null, "last_seen_date": null, "note": "neprevereny (nizka priorita)" },
-    "Hotovo": { "last_seen_url": null, "last_seen_date": null, "note": "neprevereny (nizka priorita)" },
-    "Wezeo": { "last_seen_url": null, "last_seen_date": null, "note": "neprevereny (nizka priorita)" }
+    "GlobalLogic": {
+      "last_seen_url": null,
+      "last_seen_date": null,
+      "note": "neprevereny (nizka priorita)"
+    },
+    "Netguru": {
+      "last_seen_url": null,
+      "last_seen_date": null,
+      "note": "neprevereny (nizka priorita)"
+    },
+    "Miquido": {
+      "last_seen_url": null,
+      "last_seen_date": null,
+      "note": "neprevereny (nizka priorita)"
+    },
+    "Apptension": {
+      "last_seen_url": null,
+      "last_seen_date": null,
+      "note": "neprevereny (nizka priorita)"
+    },
+    "Monterail": {
+      "last_seen_url": null,
+      "last_seen_date": null,
+      "note": "neprevereny (nizka priorita)"
+    },
+    "Thoughtworks": {
+      "last_seen_url": null,
+      "last_seen_date": null,
+      "note": "neprevereny (nizka priorita)"
+    },
+    "Globant": {
+      "last_seen_url": null,
+      "last_seen_date": null,
+      "note": "neprevereny (nizka priorita)"
+    },
+    "Productboard": {
+      "last_seen_url": null,
+      "last_seen_date": null,
+      "note": "neprevereny (nizka priorita)"
+    },
+    "Mews": {
+      "last_seen_url": null,
+      "last_seen_date": null,
+      "note": "neprevereny (nizka priorita)"
+    },
+    "Rossum": {
+      "last_seen_url": null,
+      "last_seen_date": null,
+      "note": "neprevereny (nizka priorita)"
+    },
+    "Hotovo": {
+      "last_seen_url": null,
+      "last_seen_date": null,
+      "note": "neprevereny (nizka priorita)"
+    },
+    "Wezeo": {
+      "last_seen_url": null,
+      "last_seen_date": null,
+      "note": "neprevereny (nizka priorita)"
+    }
   },
   "content_trends": [
-    {
-      "id": "T1",
-      "trend": "Bottleneck sa presunul z generovania kodu na review a governance",
-      "status": "pokracuje",
-      "evidence": "Ciklum (Faros AI +91 % review time), STRV (three-layer system), SudoLabs (Spec-Driven Development), Ackee (ADLC)",
-      "implication_for_gr": "Teza 'AI pod dohladom senior expertov' je konsenzus, nie pozicia. Diferencovat sa da uz len dokazom."
-    },
-    {
-      "id": "T2",
-      "trend": "'AI-native vs AI-assisted' sa stava nakupnym kriteriom; Vacuumlabs z toho robi seriu",
-      "status": "eskaluje",
-      "evidence": "Vacuumlabs: AI-native vs assisted + How to Choose a Core Banking Implementation Partner (18.6., 7 kriterii) + Hitting the Infrastructure Ceiling (30.7.). Z jedneho clanku je vzor.",
-      "implication_for_gr": "Kto napise otazky, podla ktorych klient vybera, urcuje kriteria sutaze. GR potrebuje vlastnu uprimnu verziu s hranicami (W33-03)."
-    },
-    {
-      "id": "T3",
-      "trend": "Pojmenovane frameworky a produktizovane CTA namiesto 'kontaktujte nas'",
-      "status": "pokracuje",
-      "evidence": "Ciklum AI Strategy Clinic + 90-day roadmap + novy MCP e-book (3.8.); STRV three-layer + RODES; SudoLabs Spec-Driven Development; Vacuumlabs 9 gated whitepaperov + 'Spark'",
-      "implication_for_gr": "GR nema pojmenovany citovatelny asset ani produktizovane CTA."
-    },
-    {
-      "id": "T4",
-      "trend": "Regulovane vertikaly s prevadzkovymi cislami = najsilnejsi case-study format",
-      "status": "pokracuje, pribudol novy hrac",
-      "evidence": "Touch4IT HIPAA/SOC 2; Applifting (69 -> 92 %, 10x cena); NOVE: ui42 Finax case study (31.7.) - e-commerce agentura vstupila do investicnej platformy; Ciklum trading app research (30.6.)",
-      "implication_for_gr": "Fintech case-study format sa zacina obsadzovat aj zboku. Idea W31-04 tym straca casovu vyhodu."
-    },
-    {
-      "id": "T5",
-      "trend": "Opakujuce sa datovane formaty ako lacna cadencia",
-      "status": "pokracuje",
-      "evidence": "Futured mesacne rubriky (App News srpen 4.8.), rychly newsjacking platform updatov (WWDC 6.8.); ui42 3-dielna seria",
-      "implication_for_gr": "Pre regulovany fintech to nerobi nikto - Regulated Delivery Digest (W31-05)."
-    },
-    {
-      "id": "T6",
-      "trend": "Stat-stacking z cudzich zdrojov; nikto nepublikuje vlastne delivery data s metodikou",
-      "status": "pokracuje",
-      "evidence": "SudoLabs (Gartner/MIT), Ciklum (2,5 bil. USD, 39 %), Vacuumlabs (Accenture 70 % IT budgetu na maintenance), Touch4IT (McKinsey 9 h/tyzden)",
-      "implication_for_gr": "Kto prvy zverejni vlastne data s metodikou, ziska nekopirovatelnu citovatelnost."
-    },
-    {
-      "id": "T7",
-      "trend": "AI Act cl. 50 uz plati; realny otvoreny termin je 2.12.2026 na machine-readable oznacovanie",
-      "status": "aktualizovane - deadline 2.8. presiel, novy beziaci termin",
-      "evidence": "Code of Practice on marking and labelling AI-generated content publikovany 10.6.2026 (vratane oficialnej sady EU ikon); adequacy decision Komisia 8.7. a AI Board 9.7.; finalne guidelines k cl. 50 20.7.; cl. 50 plati od 2.8.2026 aj na systemy uz na trhu; machine-readable oznacovanie (cl. 50 ods. 2) pre generativne systemy na trhu pred 2.8. az do 2.12.2026; interoperabilna detekcia watermarkov do 2.2.2027; sankcie do 15 mil. EUR / 3 %.",
-      "implication_for_gr": "Nikto zo sledovanych SK/CZ firiem o tom nepublikoval. Podpis Code of Practice moze byt polahcujuca okolnost pri pokutach = konkretny argument."
-    },
-    {
-      "id": "T8",
-      "trend": "DORA x AI Act delta - nikto v SK/CZ; cl. 14 doslova opisuje GR poziciu",
-      "status": "stale volne",
-      "evidence": "AI Act pridava nad DORA: cl. 10 data governance, cl. 9 model risk cez lifecycle, cl. 14 human oversight by design, cl. 49/71 registracia v EU databaze.",
-      "implication_for_gr": "Clanok 14 = GR pozicia zapisana do zakona. Zavazny je dokaz."
-    },
-    {
-      "id": "T9",
-      "trend": "NOVE: vstupny bod appky sa presuva z ikony na systemoveho AI agenta - a EU dostava horsiu verziu",
-      "evidence": "Apple newsroom (jun 2026): Siri AI nepride do EU s iOS 27/iPadOS 27 kvoli sporu o DMA, vyvojari z EU ju nemozu ani testovat; Siri AI je v beta za waitlistom, App Intents/App Entities su napojenie; Android AppFunctions API (alpha) robi to iste; Foundation Models zdarma pre Small Business Program (do 2 mil. downloadov). Futured to chytil 6.8., v SK sete nikto.",
-      "implication_for_gr": "GR je mobile-first a uz ma dva App Intents clanky - najlacnejsi silny kus tohto tyzdna je refresh, nie novy vyskum (W33-01)."
-    },
-    {
-      "id": "T10",
-      "trend": "NOVE: interny AI asistent nad firemnymi datami je nova standardna ponuka - bez rieseneho pristupoveho modelu",
-      "evidence": "Touch4IT (7.8.) RAG asistent nad 100 000+ dokumentmi, bezpecnost riesena certifikaciami a hostingom; Ciklum MCP e-book (3.8.), intelligent automation (5.8.), data readiness checklist (6.8.), AI Readiness Gap (31.7.); SudoLabs data-readiness kus (4/2026).",
-      "implication_for_gr": "Nikto nepise o permission-aware retrieval a o dokazovani, preco asistent odpovedal prave toto. V banke je to podmienka nasadenia, nie detail (W33-02)."
-    },
-    {
-      "id": "T11",
-      "trend": "NOVE: osobny a organizacny register namiesto thought leadershipu",
-      "evidence": "STRV: CEO Lubo Smid 'Walk the Talk' (diabetes, trening, sabbatical, Barry's World Tour); Applifting (7.8.) otvoreny kus o tom, co sa zmeni, ked teal firma dostane CTO.",
-      "implication_for_gr": "Volny slot na ludsky/kulturny kus z vlastnej skusenosti; nizky effort, nepotrebuje data ani suhlas."
-    }
+    "Delivery ekonomika AI: uzke hrdlo sa presunulo z pisania kodu do review a QA (STRV, Ciklum - 2 nezavisle zdroje za 2 tyzdne)",
+    "Buyer shift z pilotov do produkcie s governance - Ciklum to postavil ako celomesacnu kampan s cislami a gated e-bookom",
+    "Vertikalna seria ako format: Touch4IT healthcare (8 kusov za 6 tyzdnov), Ciklum BFSI",
+    "Gated e-book ako standardny asset k technickej teme (Ciklum: MCP guide, State of AI in BFSI, Building Society Modernization)",
+    "Expert video s menom analytika a znackou poradcu (Ciklum x Deloitte) - novy format v sete",
+    "Osobny a ludsky register rastie: STRV Walk the Talk, Ackee WWDC reportaz, Panaxeo printer, Applifting product trio",
+    "Newsjacking platformovych zmien drzi jediny Futured - iPhone Duo, CRA, Google developer verification",
+    "Accessibility sa vracia, ale koncepcne a bez regulacie (Touch4IT, STRV) - GR ma regulacny uhol uz pokryty",
+    "AI Act a DORA prestali byt volne - Touch4IT zabral oboje v auguste",
+    "Case study s jednym cislom v titulku (Futured Lekarna -40 % casu) sa siri ako format",
+    "Ticho ako signal: Cleevio, Zentity, Coderama - 3 behy bez pohybu"
   ],
   "content_gaps": [
-    "AI Act machine-readable oznacovanie do 2.12.2026 prakticky pre produktove timy - nikto zo sledovanych",
-    "Permission-aware retrieval a audit trail v internych AI asistentoch - nikto zo sledovanych",
-    "App Intents / AppFunctions pre bankovu appku v EU bez Siri AI - v SK sete nikto",
-    "EU AI Act cl. 50 prakticky pre SK/CZ banky a fintechy - nikto zo sledovanych",
-    "DORA x AI Act delta pre dodavatelske a delivery timy - nikto zo sledovanych",
-    "Vlastne delivery data s metodikou - nikto v SK/CZ",
-    "Clanok 14 ako inzinierska praxa (nie policy) - nikto",
-    "Recurring datovany format pre regulovany fintech",
-    "Uprimny nakupny checklist s hranicami (kedy nas nenajimat) - vsetci pisu len kriteria vo svoj prospech"
+    "CRA ohlasovacia povinnost (od 11.9.2026) z pohladu vyvojoveho timu - NIKTO v sete, len 1 odstavec u Futured. Najvacsia diera.",
+    "Ako prestavat review a QA branu, ked AI generuje 3x viac PR - STRV aj Ciklum problem pomenovali, riesenie nenapisal nikto",
+    "Vlastne delivery cisla s metodikou - stale nikto v celom sete, vratane STRV",
+    "AI Act cl. 50 machine-readable oznacovanie do 2.12.2026 - stale nikto",
+    "Human oversight by design (AI Act cl. 14) ako inzinierska praxa - stale nikto",
+    "Permission-aware retrieval v internych AI asistentoch - Touch4IT temu opustil",
+    "Google developer verification a dopad na enterprise/internu distribuciu APK - nikto okrem odstavca u Futured",
+    "Prakticky kus k iPhone Duo pre regulovane appky (split-view, dashboardy) - po 23.10. bude okno otvorene kratko",
+    "Accessibility x regulacia v SK kontexte - GR uz ma, konkurencia pise koncepcne; prilezitost na refresh a repost"
   ],
   "watchlist": [
-    "Touch4IT: posunie seriu o regulovanych vertikalach z healthcare do fintechu? (priama kolizia s GR)",
-    "ui42: bude z Finax case study seria? Vstup e-commerce agentury do fintechu je novy signal.",
-    "Vacuumlabs: stane sa z nakupnych kriterii gated whitepaper alebo kampan? Doplnia metodiku k cislam v /how-we-work-with-ai?",
-    "Ciklum: prenesie produktizovane CTA (AI Strategy Clinic + 90-day roadmap) do SK/CZ? Bude MCP e-book seria?",
-    "Zoberie niekto v SK/CZ AI Act cl. 50 prakticky, hlavne termin 2.12.2026?",
-    "STRV: zverejnia vlastne delivery data? Bude z osobneho registra Luba Smida pravidelny format?",
-    "Cleevio AI Agents spinoff - obsahova vlna po zalozeni venture?",
-    "Zentity: zapnu obsahovy engine k existujucim bankovym case studies?",
-    "Futured: vyvoj mesacnych rubrik ako formatu",
-    "Adastra: neoverena 2 behy v rade - opravit URL alebo znizit prioritu",
-    "Ticho ako signal: SudoLabs, Panaxeo, Ackee, Cleevio, Zentity - 2 behy bez novinky"
+    "CRA: zoberie to niekto v SK/CZ prakticky do ~2 tyzdnov? Ak nie, je to nase.",
+    "Ciklum: bol september kampan alebo nova kadencia? (medzi 6.8. a 2.9. nula poloziek)",
+    "Touch4IT: skonci healthcare seria a vrati sa k fintechu? AI Act a DORA kusy uz zabrali.",
+    "STRV: pridaju k 'When Faster Doesnt Mean Sooner' vlastne delivery data?",
+    "iPhone Duo 23.10.2026 - kto z SK/CZ vyda prvy prakticky kus po launchi",
+    "Google developer verification 30.9.2026 - zachyti to niekto okrem Futured?",
+    "AI Act cl. 50 termin 2.12.2026 - stale volne 3 behy v rade",
+    "ui42: bol Finax jednorazovy fintech vstup? Zatial ziadne pokracovanie.",
+    "SudoLabs: bol kus z 18.9. navrat kadencie alebo jednorazovka?",
+    "Cleevio AI Agents spinoff - 3 behy bez obsahovej vlny",
+    "Adastra: 3. neovereny beh (503) - opravit URL alebo znizit prioritu",
+    "Ticho ako signal: Cleevio, Zentity, Coderama"
   ],
   "open_hypotheses": [
-    "H1 (UZAVRETE): nikto v SK/CZ nezabral AI Act cl. 50 do 2.8.2026 - potvrdene, deadline presiel bez pokrytia.",
-    "H2: 'AI-assisted' sa stane pejorativom a 'AI-native' default narokom -> GR musi AI-Augmented Delivery aktivne obhajit. Podporene eskalaciou Vacuumlabs serie.",
-    "H3: Case studies s prevadzkovymi cislami maju vo fintechu vyssi efekt nez AI thought leadership.",
-    "H4: Recurring datovany format prekona jednorazove hlbkove clanky v celkovom vykone (Futured vzor) - overit po 3 cislach.",
-    "H5 (NEOVERENE, potrebuje LinkedIn pristup): CEO-led obsah (STRV Lubo Smid, Futured Lukas Strnadel, Panaxeo Igor Liska) ma vyssi engagement nez firemny profil.",
-    "H6 (NOVE): refresh existujuceho technickeho kusu s novym regulacnym/platformovym kontextom ma lepsi pomer effort/vysledok nez novy kus - overit na App Intents refreshi (W33-01).",
-    "H7 (NOVE): interne AI asistenty budu v regulovanom prostredi padat na pristupovych pravach, nie na kvalite modelu - overit dopytom z trhu po publikovani W33-02."
+    "Ciklum septembrovy sprint je kampan k e-booku 'Stuck in Pilot', nie trvale zvysena kadencia - overit v dalsom behu",
+    "Touch4IT healthcare seria je priprava na vstup do US healthcare trhu (reimbursement kus z 18.9. je US-specificky)",
+    "Nikto v SK/CZ set nema bezpecnostneho autora, preto CRA nikto nezobral - diera je strukturalna, nie docasna",
+    "STRV nezverejni vlastne delivery cisla, lebo by ukazali to iste co METR studia (AI nezrychlila dodavku)",
+    "Gated e-book funguje Ciklumu na enterprise leads; v SK/CZ velkosti trhu to zatial nikto neskusil",
+    "ui42 Finax bola klientska zakazka, nie strategicky vstup do fintechu",
+    "Accessibility vlna u Touch4IT a STRV je SEO-driven (EAA enforcement), nie temou z praxe - ziadny z kusov necituje regulaciu"
   ],
   "known_limitations": [
-    "LinkedIn engagement data nedostupne (login wall) - vsetky zistenia su z webov a blogov.",
-    "Datumy chybaju v HTML na STRV blog listingu, SudoLabs insights listingu, Cleevio blog listingu a Vacuumlabs homepage. Pri STRV a Cleevio je 'nove' odvodene z porovnania zlozenia listingu, neoverene.",
-    "adastra.digital vratila prazdny obsah 2 behy v rade.",
-    "ciklum.com/resources/blog/<slug> vracia 404; obsah mapovany z /all-resources/ listingu bez detailov clankov.",
-    "vacuumlabs.com/insights a /knowledge-hub vracaju 404.",
-    "competitors.yaml: coderama.sk -> opravit na coderama.com; zvazit doplnenie klucovych ludi na LinkedIn a opravu Adastra URL."
-  ]
+    "LinkedIn engagement neovereny 3 behy v rade (login wall) - ziadny tip nestoji na LinkedIn datach",
+    "Datumy nie su v HTML: STRV, SudoLabs (listing), Cleevio, Vacuumlabs - 'nove' odvodene z porovnania zlozenia listingu",
+    "Vacuumlabs: /articles, /articles/ aj /knowledge-hub nevracaju pouzitelny listing; pouzity /topic/engineering/",
+    "Adastra neoverena 3 behy v rade (HTTP 503)",
+    "GR blog listing nema datumy - pokrytie vlastnych tem overene cez vyhladavanie, nie chronologicky",
+    "Nizkopriorittne zdroje (GlobalLogic, Netguru, Miquido, Apptension, Monterail, Thoughtworks, Globant, Productboard, Mews, Rossum, Hotovo, Wezeo) neprevereny ani tento beh",
+    "Okno je 6-tyzdnove (10.8.-21.9.), nie standardnych 14 dni - vypadol jeden beh"
+  ],
+  "slack_post": {
+    "channel": "_gr-opportunity-scout",
+    "channel_id": "C0BE78X6V19",
+    "main_post_ts": "1789974493.380029",
+    "thread_replies": 2,
+    "permalink": "https://goodrequest.slack.com/archives/C0BE78X6V19/p1789974493380029"
+  }
 }
